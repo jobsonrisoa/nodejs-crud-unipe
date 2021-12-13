@@ -19,7 +19,7 @@ server.use((req,res, next) => {
     console.timeEnd('Request');
 });
 
-
+// 1 - Questão
 function checkPaises(req, res, next) {
     const passeio = lugares[req.params.index];
     if (!req.body.paises) {
@@ -37,6 +37,8 @@ req.local = local;
 
 return next();
 }
+
+// Routes
 
 server.get('/nodejs', (req, res) => {
     return res.json(req.lugares);
